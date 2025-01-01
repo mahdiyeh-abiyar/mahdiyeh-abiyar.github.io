@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: Yekan Bakh FaNum;
+    
+    
+}
+body,html{
+    height: 100%;
+}
+
+
+.login{
+    display: flex;
+    height: 100vh;
+}
+    .login__title{
+        background-color: #a91825;
+        width: 60%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+        .login__title--content{
+            width: 70%;
+            margin-top: 10%;
+            margin-left: 15%;
+            line-height: 2;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .login__title--content p{
+                opacity: 50%;
+            }
+            .login__title--content img{
+                width: 45%;
+                height: auto;
+                display: block;
+            }
+    .login__form{
+        background-color: #e4d1b3;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+        .login__form form{
+            border-radius: 30px;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 70%;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+
+        }
+            .login__form form input{
+                border: unset;
+                outline: unset;
+                border-bottom:2px solid #a91825 ;
+                padding: 10px;
+                margin-bottom: 10%;
+                font-size: 20px;
+                width: 80%;
+            }
+            .login__form form input::placeholder{
+                color: #a91825;
+                opacity: 30%;
+                font-size: 16px;
+            }
+            .login__form--btn{
+                font-size: 20px;
+                padding: 10px;
+                background-color: #a91825;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                border:unset;
+                width: 30%;
+                display: inline-block;
+                text-align: center;
+                transition: 0.2s;
+            }
+            
+
+            .login__title--content h1{
+                opacity: 0;
+                transform: translateY(-20px);
+                animation: fadeIn 1s forwards;
+            }
+                @keyframes fadeIn{    
+                    to{
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+        
+            .login__title--content img{
+                animation: tea-cup-animation 5s infinite; /* Adjust the animation duration and loop */
+            }
+                @keyframes tea-cup-animation {
+                    0% {
+                    transform: translateX(0);
+                    }
+                    50% {
+                    transform: translateX(-10px);
+                    }
+                    100% {
+                    transform: translateX(0);
+                    }
+                }
+        
+            .login__form--btn:hover{
+                box-shadow: 0 0 0 4px #fff,
+                0 0 0 6px #a91825;
+            }
+        
+        
+
+
+  

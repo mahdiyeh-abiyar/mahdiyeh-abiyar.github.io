@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <link rel="stylesheet" href="Css/global/header.css">
+    <title>کاترین</title>
+
+
+
+</head>
+
+<body>
+
+    <!-- هدر :بخش اصلی ناوبری و دسترسی سریع به قسمت های مختلف سایت -->
+    <header class="header">
+        <div class="header__container">
+            <!-- لوگو:لینک به صفحه اصلی از طریق لوگو -->
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <img src="assets/images/icon-etc/logo-header.png" alt="Logo" class="header__logo-img">
+                </a>
+            </div>
+            <!-- منوی ناوبری:لینک های ناوبری به بخش های مختلف سایت -->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" target="_blank" class="header__nav-link">صفحه اصلی</a></li>
+                    <li class="header__nav-item"><a href="products.html" target="_blank" class="header__nav-link">فروشگاه</a></li>
+                    <li class="header__nav-item"><a href="blog.html" target="_blank" class="header__nav-link">مقالات</a></li>
+                    <li class="header__nav-item"><a href="contact.html" target="_blank" class="header__nav-link">تماس با ما</a></li>
+                    <li class="header__nav-item"><a href="about.html" target="_blank" class="header__nav-link">درباره ما</a></li>
+                </ul>
+            </nav>
+            <!-- آیکون ها:دسترسی سریع به سبدخرید و جستجو  -->
+            <div class="header__icons">
+                <a href="#" class="header__icon header__icon--cart">
+                    <img src="assets/images/icon-etc/Shopping cart (1).svg" alt="Cart">
+                </a>
+                <a href="products.html" target="_blank" class="header__icon header__icon--search">
+                    <img src="assets/images/icon-etc/Search (1).svg" alt="Search">
+                </a>
+            </div>
+            <!-- دکمه حساب کاربری:لینک به صفحه ورود یا حساب کابری -->
+            <div class="header__account">
+                <button class="header__account-button" href="login.html">
+                    <a href="login.html" target="_blank" class="header__icon header__icon--account">
+                        <img src="assets/images/icon-etc/User.svg" alt="Account">
+                    </a>
+                    حساب کاربری
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- بنر اصلی :بخش تبلیغاتی برای معرفی شعار و محصولات-->
+    <div class="banner">
+        <!-- پوشش محو برای بنر:بهتر کردن خوانایی متن با اضافه کردن یک لایه تاریک کندده -->
+        <div class="banner__overlay"></div>
+        <!-- متن بنر:نمایش شعار و دکمه ای برای هدایت به فروشگاه -->
+        <div class="banner__text">
+            شیـرینی زندگـی‌تان را با کـاتریـن دو چنـدان کنید.
+            <p>چایی رو بزار قندش با من!</p>
+            <a href="products.html" class="banner__button" target="_blank">مشاهده فروشگاه</a>
+        </div>
+    </div>
+    <!-- محتوای اصلی -->
+    <main>
+        <!-- بخش دسته بندی ها:نمایش دسته های محصولات محبوب-->
+        <section class="category-section">
+            <h2 class="category-section__title">محبوب ترین دسته ها</h2>
+            <div class="categories">
+                <!-- دسته بندی : نبات  -->
+                <div class="category">
+                    <img src="assets/images/katrin/candy.jpg" alt=" نبات" class="category__image">
+                    <div class="category__overlay">نبات</div>
+                </div>
+                <!-- دسته بندی:شکر -->
+                <div class="category">
+                    <img src="assets/images/katrin/suger.jpg" alt="  شکر" class="category__image">
+                    <div class="category__overlay">شکر </div>
+                </div>
+                <!-- دسته بندی:قند  -->
+                <div class="category">
+                    <img src="assets/images/katrin/cube suger.jpg" alt=" قند" class="category__image">
+                    <div class="category__overlay">قند </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش محصولات -->
+        <section class="product">
+            <!-- سربرگ محصولات  -->
+            <div class="reading__header">
+                <!-- عنوان بخش محصولات پرفروش  -->
+                <h2 class="product__title">محصولات پر فروش</h2>
+            </div>
+            <!-- گرید کارت های محصولات  -->
+            <div class="product__grid">
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- کارت محصول  -->
+                <div class="product__card">
+                    <!-- تصویر محصول  -->
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <!-- نام محصول  -->
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <!-- قیمت محصول  -->
+                    <p class="product__price">
+                        <!-- قیمت تخفیف خورده  -->
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <!-- قیمت اصلی (خط خورده ) -->
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <!-- نمایش رتبه بندی ها با ستاره  -->
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <!-- آیکون های سبد خرید و علاقه مندی ها  -->
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <!-- لینک به صفحه مشاهده همه محصولات  -->
+                <a href="products.html" class="product__view-all">مشاهده همه</a>
+            </div>
+        </section>
+        <!-- بخش پیشنهادات ویژه با تایمر -->
+        <section class="product-grid  Offer">
+            <!-- بخش تایمر -->
+            <div class="timer">
+                <h2 class="timer__title">پیشنهادهای
+                    <br>
+                    <!-- بخش متن شگفت‌انگیز به رنگ متفاوت -->
+                    <span>
+                        شگفت انگیز
+                    </span>
+                </h2>
+                <!-- دکمه مشاهده همه پیشنهادها -->
+                <button class="timer__button">مشاهده همه </button>
+                <!-- شمارنده معکوس تایمر -->
+                <div class="timer__countdown">
+                    <!-- جعبه تایمر برای نمایش ثانیه‌ها -->
+                    <div class="timer__box">
+                        <span class="timer__time">۴۸</span>
+                        <span class="timer__label">ثانیه</span>
+                    </div>
+                    <!-- جعبه تایمر برای نمایش دقیقه‌ها -->
+                    <div class="timer__box">
+                        <span class="timer__time">۵۹</span>
+                        <span class="timer__label">دقیقه</span>
+                    </div>
+                    <!-- جعبه تایمر برای نمایش ساعت‌ها -->
+                    <div class="timer__box">
+                        <span class="timer__time">۰۲</span>
+                        <span class="timer__label">ساعت</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__grid">
+
+                <div class="product__card">
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <p class="product__price">
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="like">
+                    </div>
+                </div>
+
+
+                <div class="product__card">
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <p class="product__price">
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product__card">
+                    <img src="assets/images/katrin/3D Nabat zafrani ni copy 2.jpg " alt="Product 1">
+                    <h3>نبات شاخه‌ای ۲۰۰ گرم</h3>
+                    <p class="product__price">
+                        <span class="product__price--discounted">۲۰۰,۰۰۰ تومان</span>
+                        <span class="product__price--original">۳۳۰,۰۰۰ تومان</span>
+                    </p>
+                    <div class="product__stars">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star.svg" alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                        <img src="assets/images/icon-etc/Star (1).svg " alt="Star">
+                    </div>
+                    <div class="product__cart-icon">
+                        <img src="assets/images/icon-etc/Shopping cart (1).svg " alt="Cart">
+                        <img src="assets/images/icon-etc/heart.svg" alt="">
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- بخش مطالب خواندنی -->
+        <section class="reading-section">
+            <!-- سربرگ بخش مطالب خواندنی -->
+            <div class="reading-section__header">
+                <!-- عنوان بخش مطالب خواندنی -->
+                <h2 class="reading-section__title">مطالب خواندنی</h2>
+                <!-- لینک مشاهده همه مطالب -->
+                <a href="#" class="reading-section__view-all">مشاهده همه</a>
+            </div>
+
+            <!-- محتوای بخش مطالب خواندنی -->
+            <div class="reading-section__content">
+                <!-- کارت مقاله ۱ -->
+                <div class="article-card">
+                    <div class="article-card--content">
+                        <!-- تصویر مقاله -->
+                        <div>
+                            <a href="blog.html" target="_blank">
+                                <img src="assets/images/katrin/blog_box1.png" alt="Article 1"
+                                    class="article-card__image">
+                            </a>
+                        </div>
+                        <!-- عنوان و متن کوتاه مقاله -->
+                        <div>
+                            <h3 class="article-card__title"> چگونه نبات های رنگی بسازیم؟</h3>
+                            <p class="article-card__excerpt">
+                                نبات، یک نوع قند بلوری و شیرین است که به عنوان یکی از خوراکی‌های محبوب در مناطق مختلف
+                                ایران و جهان شناخته می‌شود. تولید نبات رنگی...
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- اطلاعات مقاله شامل تاریخ و تعداد بازدیدها -->
+                    <div class="article-card__info">
+                        <span class="article-card__info-item">
+                            <img src="assets/images/icon-etc/Calendar.svg" alt="Date" class="article-card__icon">
+                            1403/05/01
+                        </span>
+                        <span class="article-card__info-item">
+                            540<img src="assets/images/icon-etc/Icon.svg" alt="Views" class="article-card__icon">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card--content">
+                        <div>
+                            <a href="blog.html" target="_blank">
+                                <img src="assets/images/katrin/blog-box2.png" alt="Article 1"
+                                    class="article-card__image">
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="article-card__title"> خواص بی‌نظیر نبات</h3>
+                            <p class="article-card__excerpt">
+                                نبات به واسطه دارا بودن مقدارزيادي ساکارز خيلي سريع جذب بدن شده و به خاطر تقويت عضلات
+                                باعث افزايش سوخت ساز چربي ها و مواد پروتيني در بدن ...
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="article-card__info">
+                        <span class="article-card__info-item">
+                            <img src="assets/images/icon-etc/Calendar.svg" alt="Date" class="article-card__icon">
+                            1403/05/01
+                        </span>
+                        <span class="article-card__info-item">
+                            540<img src="assets/images/icon-etc/Icon.svg" alt="Views" class="article-card__icon">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card--content">
+                        <div>
+                            <a href="blog.html" target="_blank">
+                                <img src="assets/images/katrin/blog_box3.png" alt="Article 1"
+                                    class="article-card__image">
+
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="article-card__title"> تفاوت شکر سفید و قهوه‌ای</h3>
+                            <p class="article-card__excerpt">
+                                شکر (ساکاروز) یکی از مهم‌ترین مواد غذایی در دنیای معاصر است و در جلوگیری از کاهش انرژی و
+                                افزایش طعم غذاها و نوشیدنی‌ها نقش ...
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="article-card__info">
+                        <span class="article-card__info-item">
+                            <img src="assets/images/icon-etc/Calendar.svg" alt="Date" class="article-card__icon">
+                            1403/05/01
+                        </span>
+                        <span class="article-card__info-item">
+                            540<img src="assets/images/icon-etc/Icon.svg" alt="Views" class="article-card__icon">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card--content">
+                        <div>
+                            <a href="blog.html" target="_blank">
+                                <img src="assets/images/katrin/blog_box4.png" alt="Article 1"
+                                    class="article-card__image">
+
+                            </a>
+                        </div>
+                        <div>
+                            <h3 class="article-card__title"> تأثیر قند و شکر در فرهنگ‌ها و غذاهای مختلف</h3>
+                            <p class="article-card__excerpt">
+                                قند و شکر نقش مهمی در تغذیه بشر ایفا می کنند و تأثیراتی عمیق بر فرهنگ‌های مختلف جهان
+                                دارند. از زمان‌های قدیم...
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="article-card__info">
+                        <span class="article-card__info-item">
+                            <img src="assets/images/icon-etc/Calendar.svg" alt="Date" class="article-card__icon">
+                            1403/05/01
+                        </span>
+                        <span class="article-card__info-item">
+                            540<img src="assets/images/icon-etc/Icon.svg" alt="Views" class="article-card__icon">
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- فوتر سایت -->
+    <footer class="footer">
+
+        <!-- بخش معرفی و لوگو -->
+        <div class="footer__about">
+            <!-- لوگوی سایت -->
+            <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                    <img src="assets/images/icon-etc/logo-header.png" alt="Logo" class="header__logo-img">
+                </a>
+            </div>
+            <!-- شعار شرکت -->
+            <h3 class="footer__title">تضمین کیفیت، سرمایه ماست.</h3>
+            <!-- متن معرفی شرکت -->
+            <p class="footer__text">ما بر آنیم تا با پیشرو بودن در فرایند تولید نوع و کیفیت محصول خدمات و توزیع الگویی
+                برای تولید کنندگان ایرانی باشیم...</p>
+        </div>
+
+        <!-- بخش دسترسی سریع -->
+        <div class="footer__quick-links">
+            <!-- عنوان دسترسی سریع -->
+            <h4 class="footer__heading">دسترسی سریع</h4>
+            <div class="footer__list">
+                <!-- لیست لینک‌های دسترسی سریع به صفحات اصلی سایت -->
+                <ul>
+                    <li class="footer__item"><a href="index.html">صفحه اصلی</a></li>
+                    <li class="footer__item"><a href="products.html">فروشگاه</a></li>
+                    <li class="footer__item"><a href="products.html">ثبت سفارش</a></li>
+                    <li class="footer__item"><a href="contact.html">ارتباط با ما</a></li>
+                </ul>
+                <!-- لیست لینک‌های دسترسی سریع به صفحات اضافی سایت -->
+                <ul>
+                    <li class="footer__item"><a href="login.html">ثبت نام|ورود</a></li>
+                    <li class="footer__item"><a href="#">وبلاگ</a></li>
+                    <li class="footer__item"><a href="#">شرایط و قوانین</a></li>
+                    <li class="footer__item"><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- بخش تماس با ما -->
+        <div class="footer__contact">
+            <!-- عنوان تماس با ما -->
+            <h4 class="footer__heading">در تماس باشیم</h4>
+            <!-- اطلاعات آدرس -->
+            <div class="footer__info">
+                <img src="assets/images/icon-etc/location.svg" alt="Location">
+                مازندران، آمل، شهرک صنعتی امامزاده عبداالله، فاز یک، خیابان لاله یک، شرکت تکامل غذا
+            </div>
+            <!-- اطلاعات شماره تلفن -->
+            <div class="footer__info">
+                <img src="assets/images/icon-etc/phone.svg" alt="Phone">
+                <a href="tel:01144320">011-44320</a> | <a href="tel:09013150101">0901-3150-101</a>
+            </div>
+            <!-- اطلاعات ایمیل -->
+            <div class="footer__info">
+                <img src="assets/images/icon-etc/mail.svg" alt="Email">
+                <a href="mailto:info@katrine.com">info@katrine.com</a>
+            </div>
+
+            <!-- آیکون‌های شبکه‌های اجتماعی -->
+            <div class="footer__social">
+                <a href="https://www.instagram.com/katrinco86/profilecard/?igsh=bTBrajFqNXZ5c21u" class="footer__icon">
+                    <img src="assets/images/icon-etc/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="footer__icon">
+                    <img src="assets/images/icon-etc/Linkedin.svg" alt="Linkedin">
+                </a>
+                <a href="#" class="footer__icon">
+                    <img src="assets/images/icon-etc/Send.svg" alt="Telegram">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

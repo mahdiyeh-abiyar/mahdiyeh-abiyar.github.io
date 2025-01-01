@@ -1,0 +1,650 @@
+/* Reset کلی برای همه عناصر */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: yekanbakhsh;
+}
+
+/* استایل پایه برای بدنه */
+body {
+  /* direction: rtl; */
+  margin-top: 100px;
+  background-color: var(--white-color);
+}
+
+
+/* تعریف متغیرهای رنگ‌ها */
+:root {
+  --red-color: #A91825;
+  --white-color: #E6E2D9;
+  --cream-color: #E4D1B3;
+  --dark-cream-color: #BD7346;
+  --brown-color: #673304;
+  --green-color: #218838;
+  --green-hover-color: #28a745;
+  --dark-green-color: #384d26;
+}
+
+/* تنظیمات کلی اسلایدر محصولات */
+.slider {
+  position: relative;
+  /* تنظیم موقعیت نسبی برای قرارگیری صحیح عناصر داخل */
+  max-width: 100%;
+  /* حداکثر عرض اسلایدر به اندازه عرض صفحه */
+  margin: auto;
+  /* مرکز کردن اسلایدر */
+  overflow: hidden;
+  /* پنهان کردن محتوا خارج از محدوده اسلایدر */
+}
+
+/* تنظیمات کلی برای تمامی اسلایدها */
+.slides {
+  width: 100%;
+  /* عرض کامل برای پوشش کل اسلایدر */
+  display: flex;
+  /* نمایش به صورت فلکس برای قرارگیری اسلایدها در کنار هم */
+  transition: transform 0.5s ease-in-out;
+  /* انتقال نرم برای حرکت اسلایدها */
+}
+
+/* تنظیمات برای هر اسلاید به صورت جداگانه */
+.slide {
+  min-width: 100%;
+  /* هر اسلاید عرض کامل اسلایدر را می‌پوشاند */
+  box-sizing: border-box;
+  /* در نظر گرفتن پدینگ و حاشیه در عرض و ارتفاع */
+}
+
+/* تنظیمات تصویر داخل اسلاید */
+.slide img {
+  width: 100%;
+  /* تصویر کاملاً اسلاید را پر می‌کند */
+  display: block;
+  /* جلوگیری از فضاهای اضافی پایین تصویر */
+}
+
+/* مخفی کردن رادیو دکمه‌ها */
+input[type="radio"] {
+  display: none;
+  /* رادیو دکمه‌ها در صفحه نمایش داده نمی‌شوند */
+}
+
+/* انتقال برای انتخاب اسلاید اول */
+#slide1:checked~.slides {
+  transform: translateX(0);
+  /* نمایش اسلاید اول در موقعیت اصلی */
+}
+
+/* انتقال برای انتخاب اسلاید دوم */
+#slide2:checked~.slides {
+  transform: translateX(-100%);
+}
+
+/* انتقال برای انتخاب اسلاید سوم */
+#slide3:checked~.slides {
+  transform: translateX(-200%);
+}
+
+/* انیمیشن برای حرکت خودکار بین اسلایدها */
+@keyframes slideAnimation {
+
+  0%,
+  33.33% {
+    transform: translateX(0);
+  }
+
+  /* نمایش اسلاید اول */
+  38.33%,
+  66.66% {
+    transform: translateX(-100%);
+  }
+
+  /* نمایش اسلاید دوم */
+  71.66%,
+  100% {
+    transform: translateX(-200%);
+  }
+
+  /* نمایش اسلاید سوم */
+}
+
+.slides {
+  animation: slideAnimation 12s infinite;
+  /* انیمیشن پیوسته برای حرکت بین اسلایدها */
+}
+
+/* تنظیمات نقاط ناوبری اسلایدر */
+.navigation {
+  position: absolute;
+  /* تنظیم موقعیت مطلق برای قرارگیری در پایین اسلایدر */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* مرکز کردن دقیق */
+}
+
+/* تنظیمات نقاط ناوبری */
+.nav-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  /* فاصله بین نقاط */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /* نمایش به صورت خطی */
+  cursor: pointer;
+  /* تغییر نشانگر به صورت اشاره‌گر */
+}
+
+/* تغییر رنگ نقطه ناوبری فعال */
+input[type="radio"]:checked+.navigation .nav-dot {
+  background-color: #717171;
+  /* رنگ نقطه فعال */
+}
+
+
+
+
+/* استایل نوار جستجو */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--cream-color);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* سایه برای جذابیت */
+  margin-top: 8%;
+  margin-bottom: 1%;
+}
+
+/* استایل فیلد ورودی جستجو */
+.search-bar__input {
+  padding: 10px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--white-color);
+  outline: none;
+  height: 50px;
+  width: 90%;
+}
+
+/* استایل دکمه جستجو */
+.search-bar__button {
+  padding: 10px 20px;
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  height: 50px;
+  margin-left: 1%;
+}
+
+
+
+.search-bar__button img {
+  width: 70%;
+  /* تنظیم اندازه تصویر داخل دکمه */
+}
+
+/* استایل دکمه فیلتر */
+.search-bar__filter {
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: var(--white-color);
+  color: #218838;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.search-bar__filter img {
+  width: 70%;
+}
+
+/* تنظیمات کلی برای بخش محصولات */
+.products {
+  text-align: center;
+  padding: 20px;
+}
+
+/* استایل عنوان اصلی بخش محصولات */
+.products__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* استایل زیرعنوان بخش محصولات */
+.products__subtitle {
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* تنظیمات کلی اسلایدر محصولات */
+.products__carousel {
+  display: flex;
+  align-items: center;
+}
+
+/* تنظیمات دکمه‌های ناوبری اسلایدر */
+.products__nav {
+  background-color: gray;
+  opacity: 80%;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 8px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+/* تغییر رنگ دکمه‌های ناوبری در هاور */
+.products__nav:hover {
+  background-color: rgb(155, 154, 154);
+}
+
+/* تنظیمات لیست محصولات داخل اسلایدر */
+.products__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* تنظیمات برای کارت محصول */
+.product__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+
+}
+
+/* تنظیمات کارت محصول */
+.product__card {
+  background-color: var(--cream-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
+
+}
+
+/* انیمیشن برای کارت محصول در هاور */
+.product__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* تنظیمات تصویر محصول داخل کارت */
+.product__card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+}
+
+/* انیمیشن برای زوم کردن تصویر در هاور */
+.product__card:hover img {
+  transform: scale(1.05);
+}
+
+/* تنظیمات عنوان محصول */
+.product__title {
+  /* font-size: 1.1rem; */
+  margin: 10px 0;
+  transition: color 0.3s ease;
+
+}
+
+/* تنظیمات قیمت محصول */
+.product__price {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* استایل قیمت تخفیف‌خورده */
+.product__price--discounted {
+  color: var(--green-color);
+  /* font-weight: bold; */
+}
+
+/* استایل قیمت اصلی (خط خورده) */
+.product__price--original {
+  text-decoration: line-through;
+  color: var(--red-color);
+}
+
+/* تنظیمات بخش ستاره‌های امتیازدهی */
+.product__stars {
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  /* انیمیشن برای ستاره‌ها */
+
+}
+
+/* تنظیمات اندازه آیکون‌های ستاره */
+.product__stars img {
+  width: 20px;
+  height: 20px;
+}
+
+/* تنظیمات بخش آیکون‌های خرید و علاقه‌مندی */
+.product__cart-icon {
+  float: right;
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+/* تنظیمات اندازه آیکون‌های سبد خرید و علاقه‌مندی */
+.product__cart-icon img {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+
+}
+
+/* زوم کردن آیکون‌ها در هاور */
+.product__cart-icon img:hover {
+  transform: scale(1.3);
+}
+
+/* تنظیمات کلی برای بخش مجموعه‌ها */
+.collection {
+  text-align: center;
+  padding: 20px;
+}
+
+/* استایل عنوان بخش مجموعه‌ها */
+.collection__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+
+/* تنظیمات دکمه‌های فیلتر در بخش مجموعه‌ها */
+.collection__filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* استایل کلی دکمه‌های فیلتر */
+.collection__filter {
+  border: 1px solid var(--red-color);
+  color: var(--red-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  /* font-size:100%; */
+}
+
+/* افکت هاور برای دکمه‌های فیلتر */
+.collection__filter:hover {
+  background-color: var(--red-color);
+  color: white;
+}
+
+/* استایل دکمه فیلتر فعال */
+.collection__filter--active {
+  background-color: var(--red-color);
+  color: white;
+}
+
+/* تنظیمات بخش دکمه نمایش بیشتر */
+.section__show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+/* تنظیمات خطوط کناری و دکمه نمایش بیشتر */
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* تنظیمات خطوط کناری دکمه نمایش بیشتر */
+.show-more__line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--green-color);
+}
+
+/* تنظیمات دکمه نمایش بیشتر */
+.show-more__button {
+  border: 1px solid var(--green-color);
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--green-color);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* افکت هاور برای دکمه نمایش بیشتر */
+.show-more__button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* تنظیمات کلی برای بخش ویژگی‌ها */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* تنظیمات کارت ویژگی‌ها */
+.feature {
+  flex: 1 1 200px;
+  /* max-width: 30%; */
+  padding: 20px;
+  /* background-color: white; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* تنظیمات آیکون ویژگی‌ها */
+.feature__icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* تنظیمات عنوان ویژگی‌ها */
+.feature__title {
+  font-size: 18px;
+  color: var(--dark-green-color);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+
+}
+
+/* تنظیمات توضیحات ویژگی‌ها */
+.feature__description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* افکت هاور برای کارت ویژگی‌ها */
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: var(--cream-color);
+}
+
+.feature:hover .feature__icon {
+  transform: scale(1.2);
+}
+
+.feature:hover .feature__title {
+  color: var(--green-color);
+}
+
+.feature:hover .feature__description {
+  color: var(--brown-color);
+}
+
+
+
+/* استایل کلی برای فوتر */
+
+.footer {
+  background-color: var(--cream-color);
+  color: var(--dark-green-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.header__logo-link {
+  width: 100px;
+}
+
+
+/* بخش معرفی و توضیحات درباره‌ی ما */
+.footer__about {
+  flex: 1;
+  margin: 0 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.footer__text {
+  text-align: justify;
+}
+
+/* بخش دسترسی سریع */
+.footer__quick-links {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s;
+}
+
+.footer__quick-links .footer__heading {
+  color: var(--red-color);
+  margin-bottom: 10px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__item {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.footer__item a {
+  color: var(--dark-green-color);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__item a:hover {
+  color: var(--green-color);
+  transform: translateX(5px);
+
+}
+
+/* بخش تماس با ما */
+.footer__contact {
+  flex: 1;
+  margin: 0 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+.footer__heading {
+  color: var(--red-color);
+  margin-bottom: 10px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.footer__info img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.footer__info a {
+  text-decoration: none;
+  color: var(--dark-green-color);
+  margin: 5px;
+}
+
+/* استایل برای آیکون‌های شبکه‌های اجتماعی */
+.footer__social {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.footer__icon {
+  display: inline-block;
+  background-color: var(--green-color);
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer__icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__icon:hover {
+  background-color: var(--green-hover-color);
+  transform: rotate(10deg) scale(1.1);
+
+}

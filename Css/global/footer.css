@@ -1,0 +1,124 @@
+/* استایل کلی برای فوتر */
+
+.footer {
+    background-color:var(--cream-color);
+    color: var(--dark-green-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+
+/* بخش معرفی و توضیحات درباره‌ی ما */
+.footer__about {
+    flex: 1;
+    margin: 0 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.footer__text {
+    text-align: justify;
+}
+
+/* بخش دسترسی سریع */
+.footer__quick-links {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+.footer__quick-links .footer__heading {
+    color: var(--red-color);
+    margin-bottom: 10px;
+}
+
+.footer__list {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__item {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.footer__item a {
+    color: var(--dark-green-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer__item a:hover {
+    color: var(--green-color);
+    transform: translateX(5px);
+
+}
+
+/* بخش تماس با ما */
+.footer__contact {
+    flex: 1;
+    margin: 0 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+}
+
+.footer__heading {
+    color: var(--red-color);
+    margin-bottom: 10px;
+}
+
+.footer__info {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.footer__info img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.footer__info a{
+    text-decoration: none;
+    color: var(--dark-green-color);
+    margin: 5px;
+}
+
+/* استایل برای آیکون‌های شبکه‌های اجتماعی */
+.footer__social {
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.footer__icon {
+    display: inline-block;
+    background-color: var(--green-color);
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer__icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__icon:hover {
+    background-color: var(--green-hover-color);
+    transform: rotate(10deg) scale(1.1);
+
+}

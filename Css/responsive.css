@@ -1,0 +1,1340 @@
+/*___________________ برای مانیتورهای بسیار بزرگ  با عرض بیشتر از 1921 پیکسل ________________________*/
+@media (min-width: 1921px) {
+
+    /*============
+    INDEX PAGE 
+    ============*/
+
+    /* بنر */
+    .banner__text {
+        font-size: 80px;
+    }
+
+    .banner__text p {
+        font-size: 50px;
+    }
+
+    .banner__button {
+        font-size: 40px;
+    }
+
+    /* دسته بندی محصولات */
+    .category {
+        width: 600px;
+        height: 600px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 20%;
+    }
+
+    .product__view-all {
+        display: none;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer .product__grid .product__card {
+        width: 25%;
+    }
+
+    .timer__title {
+        font-size: 2rem
+    }
+
+    .timer__title span {
+        font-size: 4rem;
+    }
+
+    .timer__box {
+        width: 200px;
+    }
+
+    .timer__label {
+        font-size: 16px;
+    }
+
+    .timer__time {
+        font-size: 50px;
+    }
+
+    .timer__button {
+        font-size: 26px;
+        width: 200px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 20%;
+    }
+
+    .article-card__excerpt {
+        font-size: 25px;
+    }
+
+    .article-card__title {
+        font-size: 30px;
+    }
+
+    .article-card__icon {
+        width: 50px;
+    }
+
+    .article-card__info-item {
+        font-size: 25px;
+    }
+
+    .reading-section__title {
+        font-size: 50px;
+    }
+
+    .reading-section__view-all {
+        font-size: 30px;
+    }
+
+    /* فوتر */
+    .footer__title {
+        font-size: 30px;
+    }
+
+    .footer {
+        font-size: 30px;
+    }
+
+    .footer__icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__icon img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+/*___________________ برای  دسکتاپ های یزرگ با عرض بین 1366 تا 1920 پیکسل ________________________*/
+
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    /*============
+    INDEX PAGE 
+    ============*/
+
+    /* محصولات */
+    .product__card {
+        width: 23%;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer .product__grid .product__card {
+        width: 30%;
+    }
+
+
+    /*=============
+    product PAGE
+    =============*/
+    .collection__filter {
+        font-size: 30px;
+    }
+
+}
+
+
+
+/*___________________ برای  لپ‌تاپ و دسکتاپ کوچک های با عرض بین 1025 تا 1366 پیکسل ________________________*/
+
+
+/* لپ‌تاپ و دسکتاپ کوچک */
+@media (min-width: 1025px) and (max-width: 1366px) {
+
+    /*============
+    INDEX PAGE 
+    ============*/
+
+    /* بنر */
+    .banner__text {
+        font-size: 36px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 30%;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .timer {
+        width: 20%;
+    }
+
+    .timer__title span {
+        font-size: 2.1rem;
+    }
+
+    .timer__button {
+        font-size: 10px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 20%;
+    }
+
+
+    .search-bar__input {
+        width: 85%;
+    }
+
+    .search-bar__button,
+    .search-bar__filter {
+        height: 45px;
+    }
+}
+
+
+
+/*___________________ برای تبلت های با عرض بین 768 تا 1024 پیکسل ________________________*/
+
+/* تبلت */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*============
+    INDEX PAGE 
+    ============*/
+
+    /* بنر */
+    .banner {
+        height: 100vh;
+    }
+
+    .banner__text {
+        font-size: 32px;
+    }
+
+    /* دسته بندی محصولات */
+    .category {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 30%;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer .product__grid .product__card {
+        width: 30%;
+    }
+
+    .timer__title span {
+        font-size: 1.8rem;
+    }
+
+    .timer__button {
+        font-size: 9px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 250px;
+    }
+
+    .article-card__excerpt {
+        font-size: 10px;
+    }
+
+    .article-card__title {
+        font-size: 12px;
+    }
+
+    .article-card__icon {
+        width: 15px;
+    }
+
+    .article-card__info-item {
+        font-size: 10px;
+    }
+
+    .reading-section__title {
+        font-size: 20px;
+    }
+
+    .reading-section__view-all {
+        font-size: 12px;
+    }
+
+    /* فوتر */
+    .footer__text {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__quick-links {
+        align-items: unset;
+        margin: 10% 0;
+    }
+
+    .footer__contact {
+        display: block;
+    }
+
+
+    /*=============
+    product PAGE
+    =============*/
+
+    .search-bar {
+        padding: 8px;
+    }
+
+    .search-bar__input,
+    .search-bar__button,
+    .search-bar__filter {
+        height: 40px;
+    }
+
+    .search-bar__button,
+    .search-bar__filter {
+        padding: 8px;
+    }
+}
+
+
+/* ______________________________برای دسکتاپ‌ها با عرض بیشتر از 1200 پیکسل _______________________________*/
+
+
+@media (min-width: 1200px) {
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: row;
+    }
+
+    .login__title {
+        width: 60%;
+        height: 100vh;
+    }
+
+    .login__title--content {
+        margin-top: 10%;
+        font-size: 90%;
+    }
+
+    .login__form {
+        width: 40%;
+        height: 100vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 45%;
+    }
+
+    .login__form input {
+        font-size: 20px;
+        padding: 12px;
+        width: 70%;
+    }
+
+    .login__form--btn {
+        font-size: 20px;
+        padding: 12px;
+        width: 40%;
+    }
+
+
+    /*=============
+    product PAGE
+    =============*/
+    .collection__filter {
+        font-size: 20px;
+    }
+}
+
+/*____________________________ برای دسکتاپ‌ها با عرض بین 992 تا 1200 پیکسل _______________________________*/
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: row;
+    }
+
+    .login__title {
+        width: 60%;
+        height: 100vh;
+    }
+
+    .login__title--content {
+        margin-top: 12%;
+        font-size: 85%;
+    }
+
+    .login__form {
+        width: 40%;
+        height: 100vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+
+    .login__form input {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .login__form--btn {
+        font-size: 18px;
+        padding: 10px;
+        width: 40%;
+    }
+}
+
+/* _____________________برای تبلت‌ها با عرض بین 768 تا 992 پیکسل __________________________*/
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: row;
+    }
+
+    .login__title {
+        width: 55%;
+        height: 100vh;
+    }
+
+    .login__title--content {
+        margin-top: 15%;
+        font-size: 75%;
+    }
+
+    .login__form {
+        width: 45%;
+        height: 100vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+
+    .login__form input {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .login__form--btn {
+        font-size: 16px;
+        padding: 8px;
+        width: 40%;
+    }
+
+    /* =============
+           CONTACT PAGE
+          ============= */
+    .section__forms {
+        font-size: 16px;
+        margin-top: 15%;
+    }
+
+    /*=============
+          ABOUT US PAGE
+          =============*/
+
+    .body__about h1 {
+        font-size: 25px;
+    }
+
+    .body__about p {
+        font-size: 15px;
+    }
+
+    .about__honors h1 {
+        font-size: 25px;
+    }
+
+    .honors__picture img {
+        width: 80px;
+    }
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    /*============
+     product PAGE
+    =============*/
+    /* Hide search bar on smaller screens */
+    .search-bar {
+        display: none;
+    }
+    .collection__filter {
+        font-size: 10px;
+    }
+
+    .products__nav {
+        width: 20px;
+        font-size: 10px;
+    }
+
+}
+
+/*___________________ برای گوشی‌های با عرض بین 480 تا 768 پیکسل ________________________*/
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: row;
+    }
+
+    .login__title {
+        width: 55%;
+        height: 100vh;
+    }
+
+    .login__title--content {
+        margin-top: 15%;
+        font-size: 55%;
+    }
+
+    .login__form {
+        width: 54%;
+        height: 100vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 45%;
+        height: 60vh;
+    }
+
+    .login__form input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .login__form--btn {
+        font-size: 14px;
+        padding: 6px;
+        width: 40%;
+    }
+
+    .login__title--content img {
+        width: 60%;
+    }
+
+    /*===============
+        CONTACT PAGE
+    ===============*/
+    .section__forms {
+        justify-content: space-around;
+        margin-top: 20%;
+        font-size: 15px;
+    }
+
+    .form__contact--input {
+        gap: 35px;
+    }
+
+    .form__contact--input input {
+        font-size: 15px;
+    }
+
+    .form2__contact--list {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .form__contact--link img {
+        width: 30px;
+    }
+
+    /*=============
+          ABOUT US PAGE
+          =============*/
+
+    .body__about {
+        margin-top: 15%;
+    }
+
+    .body__about h1 {
+        font-size: 25px;
+    }
+
+    .body__about p {
+        font-size: 15px;
+    }
+
+    .body__about--pic-paragraph {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .body__about--pic-paragraph img {
+        width: 70%;
+    }
+
+    .about__honors h1 {
+        font-size: 25px;
+    }
+
+    .honors__picture img {
+        width: 70px;
+    }
+
+    .honors__picture1-hover {
+        font-size: 13px;
+    }
+
+
+
+    /*============
+    INDEX PAGE 
+    ============*/
+
+    /* بنر */
+    .banner {
+        height: 50vh;
+    }
+
+    .banner__text {
+        font-size: 20px;
+    }
+
+    .banner__text p {
+        font-size: 12px;
+    }
+
+    .banner__button {
+        font-size: 10px;
+    }
+
+    /* دسته بندی محصولات */
+    .category-section {
+        margin-top: 10%;
+    }
+
+    .category-section__title {
+        font-size: 20px;
+    }
+
+    .category {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 25%;
+    }
+
+    .product .product__grid .product__card:first-child {
+        display: none;
+    }
+
+    .product .product__grid .product__card:last-child {
+        display: none;
+    }
+
+    .product__card h3 {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .product__price {
+        font-size: 10px;
+    }
+
+    .product__cart-icon img {
+        width: 16px;
+    }
+
+    .product__stars {
+        display: none;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer .product__grid .product__card {
+        width: 28%;
+    }
+
+    .timer__title {
+        font-size: 0.8rem
+    }
+
+    .timer__title span {
+        font-size: 25px;
+    }
+
+    .timer__box {
+        width: 25px;
+    }
+
+    .timer__label {
+        font-size: 7px;
+        display: none;
+    }
+
+    .timer__time {
+        font-size: 15px;
+    }
+
+    .timer__button {
+        font-size: 6px;
+        width: 70px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 200px;
+    }
+
+    .article-card__excerpt {
+        font-size: 12px;
+    }
+
+    .article-card__title {
+        font-size: 14px;
+    }
+
+    .article-card__icon {
+        width: 15px;
+    }
+
+    .article-card__info-item {
+        font-size: 10px;
+    }
+
+    .reading-section__title {
+        font-size: 20px;
+    }
+
+    .reading-section__view-all {
+        font-size: 12px;
+    }
+
+    /* فوتر */
+    .footer__text {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__quick-links {
+        align-items: unset;
+        margin: 10% 0;
+    }
+
+    .footer__contact {
+        display: block;
+    }
+
+
+
+
+}
+
+/* ____________________برای گوشی‌های با عرض کمتر از 480 پیکسل ___________________________*/
+
+@media (max-width: 480px) {
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .login__title {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .login__title--content {
+        margin-top: 25%;
+        font-size: 50%;
+        justify-content: center;
+        /* margin-top: -10%; */
+        margin-left: 0;
+    }
+
+    .login__title--content p {
+        display: none;
+    }
+
+    .login__title--content img {
+        margin-bottom: -130%;
+        margin-top: 100px;
+        width: 60%;
+    }
+
+    .login__title--content h1 {
+        margin-top: -20%;
+        margin-bottom: 100%;
+    }
+
+    .login__form {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 50vh;
+    }
+
+    .login__form input {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .login__form--btn {
+        width: 40%;
+        font-size: 10px;
+    }
+
+    /*============
+    CONTACT PAGE
+    ============*/
+    body {
+        background-image: unset;
+    }
+
+    .section__forms {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        margin-top: 25%;
+    }
+
+    .form__contact--input {
+        width: unset;
+        font-size: 15px;
+    }
+
+    .form__contact--input input {
+        font-size: 15px;
+    }
+
+    .form2__contact--list {
+        font-size: 15px;
+        background-color: unset;
+        align-items: start;
+        width: unset;
+    }
+
+    .form__contact--link img {
+        width: 20px;
+    }
+
+    /*=============
+     ABOUT US PAGE
+    =============*/
+    .body__about {
+        margin-top: 20%;
+    }
+
+    .body__about h1 {
+        font-size: 25px;
+    }
+
+    .body__about p {
+        font-size: 15px;
+    }
+
+    .body__about--pic-paragraph {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .body__about--pic-paragraph img {
+        width: 80%;
+    }
+
+    .about__honors h1 {
+        font-size: 20px;
+    }
+
+    .honors__picture img {
+        width: 60px;
+    }
+
+    .honors__picture1-hover {
+        font-size: 13px;
+    }
+
+    /*============
+    INDEX PAGE 
+    ============*/
+    /* بنر */
+    .banner {
+        height: 40vh;
+        margin-top: -7%;
+    }
+
+    .banner__text {
+        font-size: 14px;
+    }
+
+    .banner__text p {
+        font-size: 10px;
+        margin-bottom: 5%;
+    }
+
+    .banner__button {
+        font-size: 8px;
+    }
+
+    /* دسته بندی محصولات */
+    .category-section {
+        margin-top: 10%;
+    }
+
+    .category-section__title,
+    .product__title {
+        font-size: 20px;
+    }
+
+    .category {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 40%;
+    }
+
+    .product .product__grid .product__card:first-child {
+        display: none;
+    }
+
+    .product .product__grid .product__card:last-of-type {
+        display: none;
+    }
+
+    .product__card h3 {
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .product__price {
+        font-size: 10px;
+    }
+
+    .product__price--original {
+        display: none;
+    }
+
+    .product__cart-icon img {
+        width: 16px;
+    }
+
+    .product__stars {
+        display: none;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer {
+        flex-direction: column;
+    }
+
+    .Offer .product__grid .product__card {
+        width: 28%;
+    }
+
+    .timer__title {
+        font-size: 0.8rem
+    }
+
+    .timer__title span {
+        font-size: 2.5rem;
+    }
+
+    .timer {
+        width: 100%;
+    }
+
+    .timer__button {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 100%;
+    }
+
+    .article-card--content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .article-card__image {
+        width: 100px;
+    }
+
+    .article-card__excerpt {
+        font-size: 8px;
+    }
+
+    .article-card__title {
+        font-size: 10px;
+    }
+
+    .article-card__icon {
+        width: 12px;
+    }
+
+    .article-card__info-item {
+        font-size: 10px;
+    }
+
+    .reading-section__title {
+        font-size: 20px;
+    }
+
+    .reading-section__view-all {
+        font-size: 12px;
+    }
+
+    /* فوتر */
+    .footer__text {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__quick-links {
+        display: none;
+    }
+
+    .footer__contact {
+        margin: 10% 0;
+    }
+
+    .footer__contact {
+        display: block;
+    }
+}
+
+
+/* ____________________برای گوشی‌های با عرض کمتر از 320 پیکسل ____________________________*/
+
+@media (max-width: 320px) {
+
+
+    /* ========
+    LOGIN PAGE
+    ======== */
+
+    .login {
+        flex-direction: column;
+    }
+
+    .login__title {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .login__title--content {
+        margin-top: 25%;
+        font-size: 50%;
+        justify-content: center;
+        /* margin-top: -10%; */
+        margin-left: 0;
+    }
+
+    .login__title--content p {
+        display: none;
+    }
+
+    .login__title--content img {
+        margin-bottom: -150%;
+        margin-top: 120px;
+        width: 60%;
+    }
+
+    .login__title--content h1 {
+        margin-bottom: 100%;
+    }
+
+    .login__form {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .login__form form {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 45vh;
+    }
+
+    .login__form input {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .login__form--btn {
+        width: 40%;
+        font-size: 10px;
+    }
+
+    /*============
+    CONTACT PAGE 
+    ============*/
+    * {
+        font-size: 15px;
+    }
+
+    .form__contact--input {
+        gap: 40px;
+    }
+
+    .form2__contact--list input {
+        font-size: 13px;
+    }
+
+    .header__icons {
+        display: flex;
+    }
+
+
+    /*=============
+    ABOUT US PAGE
+    =============*/
+    .body__about {
+        margin-top: 30%;
+    }
+
+    .body__about h1 {
+        font-size: 20px;
+    }
+
+    .body__about p {
+        font-size: 13px;
+    }
+
+    .body__about--pic-paragraph {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about__honors h1 {
+        font-size: 20px;
+    }
+
+    .honors__picture img {
+        width: 60px;
+    }
+
+    .honors__picture1-hover {
+        font-size: 13px;
+    }
+
+    /*============
+    INDEX PAGE 
+    ============*/
+    /* بنر */
+    .banner {
+        height: 40vh;
+        margin-top: -7%;
+    }
+
+    .banner__text {
+        font-size: 14px;
+    }
+
+    .banner__text p {
+        font-size: 10px;
+        margin-bottom: 5%;
+    }
+
+    .banner__button {
+        font-size: 8px;
+    }
+
+    /* دسته بندی محصولات */
+    .category-section {
+        margin-top: 10%;
+    }
+
+    .category-section__title,
+    .product__title {
+        font-size: 20px;
+    }
+
+    .category {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* محصولات */
+    .product__card {
+        width: 40%;
+    }
+
+    .product .product__grid .product__card:first-child {
+        display: none;
+    }
+
+    .product .product__grid .product__card:last-of-type {
+        display: none;
+    }
+
+    .product__card h3 {
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    .product__price {
+        font-size: 10px;
+    }
+
+    .product__price--original {
+        display: none;
+    }
+
+    .product__cart-icon img {
+        width: 16px;
+    }
+
+    .product__stars {
+        display: none;
+    }
+
+    /* پیشنهاد شگفت انگیز */
+    .Offer {
+        flex-direction: column;
+    }
+
+    .Offer .product__grid .product__card {
+        width: 28%;
+    }
+
+    .timer__title {
+        font-size: 0.8rem
+    }
+
+    .timer__title span {
+        font-size: 2.5rem;
+    }
+
+    .timer {
+        width: 100%;
+    }
+
+    .timer__button {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    /* مقاله  */
+    .article-card {
+        width: 100%;
+    }
+
+    .article-card--content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .article-card__image {
+        width: 100px;
+    }
+
+    .article-card__excerpt {
+        font-size: 8px;
+    }
+
+    .article-card__title {
+        font-size: 10px;
+    }
+
+    .article-card__icon {
+        width: 12px;
+    }
+
+    .article-card__info-item {
+        font-size: 10px;
+    }
+
+    .reading-section__title {
+        font-size: 20px;
+    }
+
+    .reading-section__view-all {
+        font-size: 12px;
+    }
+
+
+    /* فوتر */
+    .footer__text {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__quick-links {
+        display: none;
+    }
+
+    .footer__contact {
+        margin: 10% 0;
+    }
+
+    .footer__contact {
+        display: block;
+    }
+}

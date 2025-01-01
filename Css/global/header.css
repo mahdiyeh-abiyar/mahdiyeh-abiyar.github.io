@@ -1,0 +1,442 @@
+/*انیمیشن fade in: انیمیشنی که عناصر را با محو شدن و حرکت بالا و پایین نشان میدهد  */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* استایل برای هدر : پس زمینه ثابت ،سایه و تنظیمات موقعیت*/
+.header {
+    background-color: rgb(230, 226, 217);
+    padding: 10px 20px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+/* تغییر رنگ پس زمینه هدر در هنگام هاور */
+.header:hover {
+    background-color: var(--cream-color);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* تنظیمات برای لوگوی هدر */
+.header__logo-link {
+    display: inline-block;
+}
+
+.header__logo-img {
+    width: 10%;
+}
+
+/*  تنظیمات منوی ناوبری */
+.header__nav {
+    flex-grow: 1;
+    margin-right: 40px;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    list-style: none;
+    animation: fadeIn 0.5s ease forwards;
+    /* اضافه کردن انیمشن به منو*/
+}
+
+.header__nav-link {
+    color: var(--red-color);
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+    /* انتقال رنگ در هنگام هاورو */
+}
+
+/* انیمیشن زیر خط در هنگام هاور */
+.header__nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--red-color);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+/* تغییر رنگ لینک منو و نمایش زیر خط در هنگام هاور */
+.header__nav-link:hover {
+    color: var(--brown-color);
+}
+
+.header__nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*  تنظیمات آیکون‌های هدر */
+.header__icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+/* انیمیشن بزرگ نمایی برای آیکون ها در هنگام هاور */
+.header__icon img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.header__icon:hover img {
+    transform: scale(1.2);
+}
+
+/* دکمه حساب کاربری */
+
+.header__account-button {
+    width: 100%;
+    background-color: var(--green-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.header__account-button:hover {
+    background-color: var(--green-hover-color);
+    transform: scale(1.1);
+
+}
+
+
+/* واکنش گرایی:تنظیمات برای اندازه های مختلف نمایشگر */
+
+/*___________________ برای مانیتورهای بسیار بزرگ  با عرض بیشتر از 1921 پیکسل ________________________*/
+
+/* مانیتورهای بسیار بزرگ */
+@media (min-width: 1921px) {
+
+    /* هدر */
+    .header__logo-img {
+        width: 200px;
+    }
+
+    .header__icon {
+        width: 40px;
+    }
+
+    .header__nav-list {
+        gap: 60px;
+    }
+
+    .header__nav-link {
+        font-size: 30px;
+    }
+
+    .header__account-button {
+        font-size: 20px;
+    }
+}
+
+
+
+/*___________________ برای  دسکتاپ های یزرگ با عرض بین 1366 تا 1920 پیکسل ________________________*/
+
+/* دسکتاپ بزرگ */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .header__logo-img {
+        width: 150px;
+    }
+
+    .header__nav-link {
+        font-size: 23px;
+    }
+
+    .header__icon img {
+        width: 25px;
+    }
+
+
+}
+
+
+
+/*___________________ برای  لپ‌تاپ و دسکتاپ کوچک های با عرض بین 1025 تا 1366 پیکسل ________________________*/
+
+
+/* لپ‌تاپ و دسکتاپ کوچک */
+@media (min-width: 1025px) and (max-width: 1366px) {
+
+    /* هدر */
+    .header__logo-img {
+        width: 100px;
+    }
+
+    .header__nav-list {
+        gap: 50px;
+    }
+
+    .header__nav-link {
+        font-size: 14px;
+    }
+
+    .header__icon {
+        width: 20px;
+    }
+
+    .header__account-button {
+        font-size: 10px;
+    }
+
+    .header__icon--account img {
+        padding: 0%;
+    }
+}
+
+
+
+/*___________________ برای تبلت های با عرض بین 768 تا 1024 پیکسل ________________________*/
+
+/* تبلت */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* هدر */
+    .header__logo-img {
+        width: 100px;
+    }
+
+    .header__nav-link {
+        font-size: 12px;
+    }
+
+    .header__icon {
+        width: 20px;
+    }
+
+    .header__icon--search {
+        margin-left: 10px;
+    }
+
+    .header__account-button {
+        font-size: 8px;
+    }
+
+    .header__nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__nav-list {
+        gap: 40px;
+    }
+
+    .header__icons {
+        margin-left: 0;
+    }
+
+    .header__account-button {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* _____________________برای تبلت‌ها با عرض بین 768 تا 992 پیکسل __________________________*/
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .header__logo-img {
+        width: 90px;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .header__nav-link {
+        font-size: 12px;
+    }
+
+    .header__nav {
+        margin-right: -100px;
+    }
+
+    .header__icon img {
+        width: 18px;
+    }
+
+    .header__icon--search {
+        margin: 0 5px 0 10px;
+    }
+
+    .header__account-button {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .header__nav-list {
+        gap: 40px;
+    }
+
+    .header__icons {
+        margin-left: 0;
+    }
+
+
+}
+
+/*___________________ برای گوشی‌های با عرض بین 480 تا 768 پیکسل ________________________*/
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+
+
+    .header__logo-img {
+        width: 85px;
+        margin-right: 0;
+
+    }
+
+    .header__nav-link {
+        font-size: 10px;
+
+    }
+
+    .header__nav {
+        margin-right: 0px;
+
+    }
+
+    .header__icon {
+        display: none;
+
+    }
+
+    .header__account-button {
+        font-size: 8px;
+
+    }
+
+    .header__nav-list {
+        gap: 20px;
+    }
+
+
+
+
+
+}
+
+
+
+/* ____________________برای گوشی‌های با عرض کمتر از 480 پیکسل ___________________________*/
+
+@media (max-width: 480px) {
+
+
+
+
+    .header__logo-img {
+        width: 60px;
+        margin-right: 0;
+
+    }
+
+    .header__nav-link {
+        font-size: 7px;
+
+    }
+
+    .header__nav {
+        margin-right: 0px;
+
+    }
+
+    .header__icon {
+        display: none;
+
+    }
+
+    .header__account-button {
+        font-size: 5px;
+
+    }
+
+    .header__nav-list {
+        gap: 10px;
+    }
+
+
+
+}
+
+/* ____________________برای گوشی‌های با عرض کمتر از 320 پیکسل ____________________________*/
+
+@media (max-width: 320px) {
+
+
+
+
+
+    .header__logo-img {
+        width: 40%;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .header__nav-link {
+        font-size: 6px;
+    }
+
+    .header__nav {
+        margin-right: 0px;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    .header__account-button {
+        font-size: 4px;
+    }
+
+    .header__nav-list {
+        gap: 10px;
+    }
+
+
+
+
+}
